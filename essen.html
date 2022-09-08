@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex">
+<title>YOLO</title>
+<link rel="icon" type="favi_icon/png" sizes="96x96" href="img/favi-icon.png">
+<link rel="stylesheet" href="css/color_box.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="css/slippry.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a579f8d9ef.js" crossorigin="anonymous"></script> 
+<script>
+		$(document).ready(function(){
+			//button ein-/ ausblenden
+			$(window).scroll(function(){
+				if($(window).scrollTop() > 200) {
+					$('#back-top').fadeIn('1000'); 
+				}
+				else {
+					$('#back-top').fadeOut('slow');
+				}
+			});
+			//bei click sanft nach oben scrollen 
+			$('#back-top a').click(function(){
+				$('html,body').animate({scrollTop:0},1000);
+				return false;
+			});
+			// edding icon
+			
+			$('.essen i').addClass('fa-solid fa-utensils fa-2x primary');
+			
+			//////////// bei click kontakt nach unten scrollen ////////////
+			$('#topnav a').click(function(){
+				var linkziel = $(this).attr('href');
+				$('html,body').animate({scrollTop:$(linkziel).offset().top - 40},1000);
+			});
+		});
+	</script>
+</head>
+<body>
+<nav>
+	<div id="topnav"> <a href="index.html"><img src="img/logo_new.png" alt="logo"></a>
+		<ul id="fixed_Nav">
+			<li><a href="index.html">HOME</a></li>
+			|
+			<li><a href="essen.html">ESSEN</a></li>
+			|
+			<li><a href="sport.html">SPORT</a></li>
+			|
+			<li><a href="relax.html">RELAX</a></li>
+			|
+			<li><a href="#kontakt">KONTAKT</a></li>
+		</ul>
+	</div>
+	<div id="losung">
+		<h2 class="text_hell">"IN EINEM GRAMM SAUCE</h2>
+		<hr>
+		<h2 class="text_hell">BEFINDET SICH EINE</h2>
+		<hr>
+		<h2 class="text_hell">VIELZAHL AN SÜNDEN."</h2>
+		<p class="text_hell">Anthony Bourdain</p>
+	</div>
+</nav>
+<main>
+	<section id="first">
+		<ul id="slide_show">
+			<li>
+				<div id="img_essen" class="fixed_img"></div>
+			</li>
+		</ul>
+	</section>
+	<div id="icon-box">
+		<figure id="icons"></figure>
+	</div>
+	<div class="wrapper">
+		<figure class="less_margin">
+			<div class="wrapper600"> <img src="img/ny.avif" alt="ny">
+				<figcaption class="essen flex-container"> <i class="fa-solid fa-utensils fa-2x"></i>
+					<div class="dauerhaft">
+						<h5>11</h5>
+						<p>TAGE</p>
+					</div>
+					<div class="left_dashed">
+						<h3 class="card-title">EINEN RIESIGEN BISSEN VOM BIG APPLE PROBIEREN.</h3>
+						<div class="flex-container">
+							<p class="card-text">New York City, USA</p>
+							<button class="btn btn-primary">
+							<a href="card1.html">Mehr lesen</a>
+							</button>
+						</div>
+					</div>
+				</figcaption>
+			</div>
+		</figure>
+		<figure class="less_margin">
+			<div class="wrapper600"> <img src="img/paris.avif" alt="paris">
+				<figcaption class="essen flex-container"> <i class="fa-solid fa-utensils fa-2x"></i>
+					<div class="dauerhaft">
+						<h5>9</h5>
+						<p>TAGE</p>
+					</div>
+					<div class="left_dashed">
+						<h3 class="card-title">KOCHEN LERNEN IN DER STADT DER GENÜSSE.</h3>
+						<div class="flex-container">
+							<p class="card-text">Paris, Frankreich</p>
+							<button class="btn btn-primary">
+							<a href="#">Mehr lesen</a>
+							</button>
+						</div>
+					</div>
+				</figcaption>
+			</div>
+		</figure>
+		<figure class="less_margin">
+			<div class="wrapper600"> <img src="img/ny.avif" alt="ny">
+				<figcaption class="essen flex-container"> <i class="fa-solid fa-utensils fa-2x"></i>
+					<div class="dauerhaft">
+						<h5>8</h5>
+						<p>TAGE</p>
+					</div>
+					<div class="left_dashed">
+						<h3 class="card-title">EINEN RIESIGEN BISSEN VOM BIG APPLE PROBIEREN.</h3>
+						<div class="flex-container">
+							<p class="card-text">New York City, USA</p>
+							<button class="btn btn-primary">
+							<a href="#">Mehr lesen</a>
+							</button>
+						</div>
+					</div>
+				</figcaption>
+			</div>
+		</figure>
+	</div>
+</main>
+<div id="back-top"> <a href="#"><i class="fa-solid fa-arrow-up"></i></a> </div>
+<div id="datenschutz">
+	<input type="checkbox" name="checkbox" id="navchecker">
+	<nav id="daten_nav">
+		<p>
+			<label for="navchecker"><img src="img/datenschutz.png" alt=""></label>
+		</p>
+		<ul>
+			<li><a href="#">Impressum</a></li>
+			<li><a href="#">Datenschutz</a></li>
+			<li><a href="#">AGB</a></li>
+		</ul>
+	</nav>
+</div>
+<footer>
+	<div id="footer_3_spalter">
+		<div id="footer_block1">
+			<div class="adresse dashed">
+				<p>Hauptstraße 84, 12444 Berlin info_yolo@website.com</p>
+			</div>
+			<p id="impr_daten_agb"> <a href="impressum.html">Impressum</a> <a href="datenschutz.html">Datenschutz</a> <a href="agb.html">AGB</a> </p>
+			<p id="copyrights">&copy 2022 YOLO</p>
+		</div>
+		<div id="footer_block2">
+			<form action="mailer.php" method="post">
+				<div id="kontakt">
+					<div>
+						<p>
+							<input type="text" name="Name" placeholder="Name" required>
+						</p>
+						<p>
+							<input type="tel" name="tel" placeholder="Telefon">
+						</p>
+						<p>
+							<input type="email" name="eMail" placeholder="E-Mail">
+						</p>
+					</div>
+					<p>
+						<textarea name="Anfrage"  placeholder="Anfrage" rows="5"></textarea>
+					</p>
+				</div>
+				<p>
+					<input type="submit" value="S E N D">
+				</p>
+			</form>
+		</div>
+		<div id="footer_block3">
+			<div class="dashed"> <a href="essen.html"><i class="fa-solid fa-utensils fa-2x"></i></a> <a href="sport.html"><i class="fa-solid fa-person-biking fa-2x"></i></a> <a href="relax.html"><i class="fa-solid fa-umbrella-beach fa-2x"></i></a> </div>
+			<p class="textBlock">
+				<input type="checkbox" name="DS" !-- Daten Schutz -- value="">
+				Ich stimme zu, dass meine Angaben und Daten zur Bearbeitung der Anfrage elektronisch erhoben und gespeichert werden. </p>
+		</div>
+	</div>
+</footer>
+<script>
+	$(document).ready(function(){
+		$('#slide_show').slippry();		
+	});
+</script>
+</body>
+</html>

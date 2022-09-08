@@ -1,0 +1,29 @@
+/* CSS Document */
+
+:root {
+	--hell: #E6EBF9;
+	--mittel: #A88BB4;
+	--dunkel: #5A5763;
+	--blue: #426AEC;
+	--indigo: #5C27F4;
+	--purple: #4E1C64;
+	--pink: #d63384;
+	--red: #CA0E0E;
+	--orange: #fd7e14;
+	--yellow: #F0C618;
+	--yellow-transp: rgba(229,221,184,0.2);
+	--green: #198754;
+	--teal: #20c997;
+	--cyan: #0dcaf0;
+	--white: #fff;
+	--hell-grau: #E8E8EB;
+	--grau: #656673;
+	--dunkel-grau: #434448;
+	--primary: #0B5993;
+	--secondary: #6C6D7D;
+	--success: #198754;
+	--info: #0dcaf0;
+	--warning: #ffc107;
+	--danger: #dc3545;
+	--bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
