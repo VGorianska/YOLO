@@ -1,114 +1,175 @@
 <!doctype html>
 <html lang="de">
-<head>
-<meta charset="utf-8">
-<meta name="robots" content="noindex">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex">
-<link rel="icon" type="favi_icon/png" sizes="96x96" href="img/favi-icon.png">
-<link rel="stylesheet" href="css/color_box.css">
-<link rel="stylesheet" href="css/style.css">
-<link href="css/slippry.css" rel="stylesheet">
-<title>YOLO</title>
-<script src="js/jquery-3.5.1.js"></script> 
-<script src="js/slippry.min.js"></script> 
-<script src="js/server.js"></script> 
-<script src="https://kit.fontawesome.com/a579f8d9ef.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<nav>
-	<div id="topnav"> <a href="index.html"><img src="img/logo_new.png" alt="logo"></a>
-		<ul id="fixed_Nav">
-			<li><a href="index.html">HOME</a></li>
-			|
-			<li><a href="essen.html">ESSEN</a></li>
-			|
-			<li><a href="sport.html">SPORT</a></li>
-			|
-			<li><a href="relax.html">RELAX</a></li>
-			|
-			<li><a href="#kontakt">KONTAKT</a></li>
-		</ul>
-	</div>
-	<div class="menu-wrap">
-		<input type="checkbox" name="checkbox" id="navchecker">
-		<nav id="topnav_burger">
-			<p>
-				<label for="navchecker">&equiv;</label>
-			</p>
-			<ul>
-				<li><a href="index.html"><i class="fa-solid fa-car fa-2x"></i></a></li>
-				<li><a href="essen.html"><i class="fa-solid fa-utensils fa-2x"></i></a></li>
-				<li><a href="sport.html"><i class="fa-solid fa-person-biking fa-2x"></i></a></li>
-				<li><a href="relax.html"><i class="fa-solid fa-umbrella-beach fa-2x"></i></a></li>
-				<li><a href="#kontakt"><i class="fa-solid fa-user fa-2x"></i></a></li>
-			</ul>
-		</nav>
-	</div>
-</nav>
-<main>
-	<div id="impr" class="wrapper height_vh">
-		<h1>Impressum</h1>
-		<h2>Angaben gemäß § 5 TMG:</h2>
-		<p><br>
-			Viktoriia Gorianska</p>
-		<h3>Postanschrift:</h3>
-		<p>Truderinger Str.<br>
-			München<br>
-		</p>
-		<h3>Kontakt:</h3>
-		<p>Telefon: 015257849792<br>
-			E-Mail: viktoriia.gorianska@gmail.com</p>
-		<p><br>
-		</p>
-		<h3>Zugelassen für:</h3>
-		<p>Deutschland<br>
-		</p>
-		<h2>Information gemäß § 36 VSBG</h2>
-		<p>Gemäß § 36 VSBG (Verbraucherstreitbeilegungsgesetz – Gesetz über die alternative Streitbeilegung in Verbrauchersachen) erklärt der Betreiber dieser Website:</p>
-		<p>Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
-		<p><em>Das Impressum wurde mit dem Impressums-Generator der activeMind AG erstellt.</em></p>
-	</div>
-</main>
-<footer>
-	<div id="footer_3_spalter">
-		<div id="footer_block1">
-			<div class="adresse deshed">
-				<p>Hauptstraße 84, 12444 Berlin info_yolo@website.com</p>
-			</div>
-			<p id="impr_daten_agb"> <a href="impressum.html">Impressum</a> <a href="datenschutz.html">Datenschutz</a> <a href="agb.html">AGB</a> </p>
-			<p id="copyrights">&copy 2022 YOLO</p>
-		</div>
-		<div id="footer_block2">
-			<form action="mailer.php" method="post">
-				<div id="kontakt">
-					<div>
-						<p>
-							<input type="text" name="Name" placeholder="Name" required>
-						</p>
-						<p>
-							<input type="tel" name="tel" placeholder="Telefon">
-						</p>
-						<p>
-							<input type="email" name="eMail" placeholder="E-Mail">
-						</p>
-					</div>
-					<p>
-						<textarea name="Anfrage"  placeholder="Anfrage" rows="5"></textarea>
-					</p>
-				</div>
-				<p>
-					<input type="submit" value="S E N D">
-				</p>
-			</form>
-		</div>
-		<div id="footer_block3">
-			<div class="dashed"> <a href="essen.html"><i class="fa-solid fa-utensils fa-2x"></i></a> <a href="sport.html"><i class="fa-solid fa-person-biking fa-2x"></i></a> <a href="relax.html"><i class="fa-solid fa-umbrella-beach fa-2x"></i></a> </div>
-			<p class="textBlock">
-				<input type="checkbox" name="DS" !-- Daten Schutz -- value="">
-				Ich stimme zu, dass meine Angaben und Daten zur Bearbeitung der Anfrage elektronisch erhoben und gespeichert werden. </p>
-		</div>
-	</div>
-</footer>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="robots" content="noindex" />
+    <link
+      rel="icon"
+      type="favi_icon/png"
+      sizes="96x96"
+      href="img/favi-icon.png"
+    />
+    <link rel="stylesheet" href="css/color_box.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="css/slippry.css" rel="stylesheet" />
+    <title>YOLO</title>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/slippry.min.js"></script>
+    <script src="js/server.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a579f8d9ef.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div id="topnav">
+        <a href="index.html"><img src="img/logo_new.png" alt="logo" /></a>
+        <ul id="fixed_Nav">
+          <li><a href="index.html">HOME</a></li>
+          |
+          <li><a href="essen.html">ESSEN</a></li>
+          |
+          <li><a href="sport.html">SPORT</a></li>
+          |
+          <li><a href="relax.html">RELAX</a></li>
+          |
+          <li><a href="#kontakt">KONTAKT</a></li>
+        </ul>
+      </div>
+      <div class="menu-wrap">
+        <input type="checkbox" name="checkbox" id="navchecker" />
+        <nav id="topnav_burger">
+          <p>
+            <label for="navchecker">&equiv;</label>
+          </p>
+          <ul>
+            <li>
+              <a href="index.html"><i class="fa-solid fa-car fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="essen.html"
+                ><i class="fa-solid fa-utensils fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a href="sport.html"
+                ><i class="fa-solid fa-person-biking fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a href="relax.html"
+                ><i class="fa-solid fa-umbrella-beach fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#kontakt"><i class="fa-solid fa-user fa-2x"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </nav>
+    <main>
+      <div id="impr" class="wrapper height_vh">
+        <h1>Impressum</h1>
+        <h2>Angaben gemäß § 5 TMG:</h2>
+        <p>
+          <br />
+          Viktoriia Gorianska
+        </p>
+        <h3>Postanschrift:</h3>
+        <p>
+          Truderinger Str.<br />
+          München<br />
+        </p>
+        <h3>Kontakt:</h3>
+        <p>
+          Telefon: 015257849792<br />
+          E-Mail: viktoriia.gorianska@gmail.com
+        </p>
+        <p><br /></p>
+        <h3>Zugelassen für:</h3>
+        <p>Deutschland<br /></p>
+        <h2>Information gemäß § 36 VSBG</h2>
+        <p>
+          Gemäß § 36 VSBG (Verbraucherstreitbeilegungsgesetz – Gesetz über die
+          alternative Streitbeilegung in Verbrauchersachen) erklärt der
+          Betreiber dieser Website:
+        </p>
+        <p>
+          Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren
+          vor einer Verbraucherschlichtungsstelle teilzunehmen.
+        </p>
+        <p>
+          <em
+            >Das Impressum wurde mit dem Impressums-Generator der activeMind AG
+            erstellt.</em
+          >
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div id="footer_3_spalter">
+        <div id="footer_block1">
+          <div class="adresse deshed">
+            <p>Hauptstraße 84, 12444 Berlin info_yolo@website.com</p>
+          </div>
+          <p id="impr_daten_agb">
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
+            <a href="agb.html">AGB</a>
+          </p>
+          <p id="copyrights">&copy 2022 YOLO</p>
+        </div>
+        <div id="footer_block2">
+          <form action="mailer.php" method="post">
+            <div id="kontakt">
+              <div>
+                <p>
+                  <input type="text" name="Name" placeholder="Name" required />
+                </p>
+                <p>
+                  <input type="tel" name="tel" placeholder="Telefon" />
+                </p>
+                <p>
+                  <input type="email" name="eMail" placeholder="E-Mail" />
+                </p>
+              </div>
+              <p>
+                <textarea
+                  name="Anfrage"
+                  placeholder="Anfrage"
+                  rows="5"
+                ></textarea>
+              </p>
+            </div>
+            <p>
+              <input type="submit" value="S E N D" />
+            </p>
+          </form>
+        </div>
+        <div id="footer_block3">
+          <div class="dashed">
+            <a href="essen.html"><i class="fa-solid fa-utensils fa-2x"></i></a>
+            <a href="sport.html"
+              ><i class="fa-solid fa-person-biking fa-2x"></i
+            ></a>
+            <a href="relax.html"
+              ><i class="fa-solid fa-umbrella-beach fa-2x"></i
+            ></a>
+          </div>
+          <p class="textBlock">
+            <input type="checkbox" name="DS" !-- Daten Schutz -- value="" />
+            Ich stimme zu, dass meine Angaben und Daten zur Bearbeitung der
+            Anfrage elektronisch erhoben und gespeichert werden.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

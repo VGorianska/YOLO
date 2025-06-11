@@ -54,31 +54,27 @@ $(document).ready(function() {
                 scrollTop: target.offset().top - 70
             }, SCROLL_ANIMATION_DURATION);
         }
+    });    // Sticky menu functionality
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 5) {
+            $('div#top').addClass('sticky');
+        } else {
+            $('div#top').removeClass('sticky');
+        }
     });
-		
-		
-		
-		//sticky-menu ------------------------------------------------------------------------------------------
-	$(window).scroll(function(){
-		//var y = $('img[src*="top1."]').height();
-							//console.log('img-height: ' + y);
-		if($(window).scrollTop() > 5){
-		   $('div#top').addClass('sticky');
-		} else {
-		   $('div#top').removeClass('sticky');
-		}
-	});
-		
-		$(document).ready(function(){
-			$('#topnav a').click(function(){
-				var linkziel = $(this).attr('href');
-				$('html,body').animate({scrollTop:$(linkziel).offset().top - 40},1000);
-			});
-		});
-		
-	//slipry-slider starten --------------------
-	$("#demo1").slippry({
-		transition: 'horizontal',
-		pager:false
-	});
+
+    // Top navigation smooth scrolling
+    $('#topnav a').click(function() {
+        const targetLink = $(this).attr('href');
+        $('html,body').animate({
+            scrollTop: $(targetLink).offset().top - 40
+        }, SCROLL_ANIMATION_DURATION);
+    });
+
+    // Initialize Slippry slider
+    $("#demo1").slippry({
+        transition: 'horizontal',
+        pager: false
+    });
+});
 	
