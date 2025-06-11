@@ -1,2 +1,7 @@
-User-Agent: *
-Disallow: /
+User-agent: *
+Allow: /
+Disallow: /konzept/
+Disallow: /js/
+Disallow: /css/
+
+Sitemap: https://yourdomain.com/sitemap.xml

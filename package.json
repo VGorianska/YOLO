@@ -1,0 +1,24 @@
+{
+  "name": "yolo",
+  "version": "1.0.0",
+  "description": "A modern, responsive travel and lifestyle website showcasing various experiences from around the world, including sports activities, culinary adventures, and relaxation destinations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VGorianska/YOLO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VGorianska/YOLO/issues"
+  },
+  "homepage": "https://github.com/VGorianska/YOLO#readme",
+  "devDependencies": {
+    "eslint": "^9.28.0",
+    "prettier": "^3.5.3"
+  }
+}
