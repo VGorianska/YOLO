@@ -24,4 +24,4 @@ dist/
 build/
 *.min.map
 
-node_modules
+node_modules/
